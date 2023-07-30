@@ -4,7 +4,7 @@ __pycache__/
 *$py.class
 
 # ignore the llama 2 model
-*/llama-main/*
+llama-main/*
 
 # C extensions
 *.so
