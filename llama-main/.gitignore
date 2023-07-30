@@ -3,9 +3,6 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-# ignore the llama 2 model
-*/llama-main/*
-
 # C extensions
 *.so
 
