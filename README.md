@@ -9,5 +9,8 @@ Experiments with LLaMA 2
 ## Download the model from HF
 - Optimized version [LLAMA-2-7B-Chat-GGML](https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGML/tree/main) by TheBloke
     -Explore [TheBloke](https://huggingface.co/TheBloke) on HF for other LLM models 
-- 
+
+## Chainlit
+- [Github Chainlit](https://github.com/Chainlit/chainlit)
+
 

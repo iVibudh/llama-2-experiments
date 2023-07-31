@@ -6,6 +6,7 @@ __pycache__/
 # ignore the llama 2 model
 llama-main/*
 *.bin
+*.pdf
 
 # C extensions
 *.so
