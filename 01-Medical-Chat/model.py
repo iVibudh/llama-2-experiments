@@ -40,7 +40,7 @@ def retrieval_qa_chain(llm, prompt, db):
 def load_llm():
     # Load the locally downloaded model here
     llm = CTransformers(
-        model = "llama-2-7b-chat.ggmlv3.q8_0.bin",
+        model = "C:\\Users\\vibud\\Desktop\\Github\\llama-2-experiments\\Models\\llama-2-7b-chat.ggmlv3.q8_0.bin",
         model_type="llama",
         max_new_tokens = 512,
         temperature = 0.5
@@ -67,9 +67,9 @@ def final_result(query):
 #chainlit code
 @cl.on_chat_start
 async def start():
-    chain = qa_bot()
     msg = cl.Message(content="Starting the bot...")
     await msg.send()
+    chain = qa_bot()
     msg.content = "Hi, Welcome to Medical Bot. What is your query?"
     await msg.update()
 
