@@ -3,6 +3,7 @@
 
 1. Open LLM
 2. text-generation-inference
+3. LocalGPT
 
 <hr />
 
@@ -106,7 +107,7 @@ print(text)
 
 <hr />
 
-# 3. LocalGPY
+# 3. LocalGPT
 
 ## YT references 
 - [Local GPT](https://www.youtube.com/watch?v=lbFmceo4D5E&t=934s&ab_channel=PromptEngineering)
