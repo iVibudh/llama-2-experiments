@@ -106,14 +106,10 @@ print(text)
 
 <hr />
 
-# 3. text-generation-inference
+# 3. LocalGPY
 
 ## YT references 
-- [Abhishek Open AI LLM](https://www.youtube.com/watch?v=o1BCq1KJULM&t=1022s&ab_channel=AbhishekThakur)
+- [Local GPT](https://www.youtube.com/watch?v=lbFmceo4D5E&t=934s&ab_channel=PromptEngineering)
 
 ## Links 
-- [text-generation-inference on HuggingFace](https://huggingface.co/text-generation-inference)
-- [text-generation-inference on Github](https://github.com/huggingface/text-generation-inference)
-
-
-## Features
+- [LocalGPT on Github](https://github.com/PromtEngineer/localGPT)
