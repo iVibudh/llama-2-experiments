@@ -1,0 +1,8 @@
+langchain==0.0.247
+chainlit==0.6.1
+pypdf==3.14.0
+faiss-cpu==1.7.4
+transformers==4.31.0
+ctransformers 
+sentence_transformers
+torch
