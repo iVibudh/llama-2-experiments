@@ -56,22 +56,57 @@
 
 # 2. text-generation-inference
 
-
 ## YT references 
 - [Abhishek Open AI LLM](https://www.youtube.com/watch?v=o1BCq1KJULM&t=1022s&ab_channel=AbhishekThakur)
+- Recommended to use it with Docker. [Docker Tutorial](https://www.youtube.com/watch?v=8vmKtS8W7IQ&list=PLLcUibM4B4Q_2ezE6pqgYYLFGp6rPJ5Je&index=20&ab_channel=KrishNaik)
+
+
 
 ## Links 
 - [text-generation-inference on HuggingFace](https://huggingface.co/text-generation-inference)
 - [text-generation-inference on Github](https://github.com/huggingface/text-generation-inference)
-
+- [tgi Dockerfile](https://github.com/huggingface/text-generation-inference/blob/main/Dockerfile)
+- Integrate with [Chat-ui](https://github.com/huggingface/chat-ui)
 
 ## Features
 
+## How to use?
+- Open VS Code 
+- Open Terminal
+- Git Hub approiach 
+    - model=tiiuae/falcon-7b-instruct volume=$PWD/data # share a volume with the Docker container to avoid downloading weights every run
+    - (chat-ui) >> docker run --gpus all --shm-size 1g -p 8080:80 -v $volume:/data ghcr.io/huggingface/text-generation-inference:1.0.0 --model-id $model
+
+OR 
+- Abhishek's approach
+    - (chat-ui) >> docker run --gpus all -p 3000:80 -v /data:/data -e LOG_LEVEL = infor, text_generation_router = debug ghcr.io/huggingface/text-generation-inference:1.0.0 --model-id meta-llama/Llama-2-13b-chat-hf --num-shard 1
+
+    - quantize edit:
+    meta-llama/Llama-2-13b-chat-hf, quantize: 
+
+- Open browser 
+127.0.0.1:3000/docs
+
+- chat ui runs on port 5173
+
+
+- Use it in python 
+    - pip install text-generation
+    - Python Code:
+from text_generation import Client
+
+client = Client("http://127.0.0.1:3000")
+print(client.generate("What is Deep Learning?", max_new_tokens=20).generated_text)
+
+text = ""
+for response in client.generate_stream("What is Deep Learning?", max_new_tokens=20):
+    if not response.token.special:
+        text += response.token.text
+print(text)
 
 <hr />
 
 # 3. text-generation-inference
-
 
 ## YT references 
 - [Abhishek Open AI LLM](https://www.youtube.com/watch?v=o1BCq1KJULM&t=1022s&ab_channel=AbhishekThakur)
