@@ -14,3 +14,10 @@ Experiments with LLaMA 2
 - [Github Chainlit](https://github.com/Chainlit/chainlit)
 
 
+# Llama2-Medical-Chatbot
+
+
+### To run the model 
+- Open cmd 
+- cd C:\Users\vibud\Desktop\Github\llama-2-experiments\01-Medical-Chat
+- chainlit run app.py 

@@ -3,3 +3,8 @@ This is a medical bot built using Llama2 and Sentence Transformers. The bot is p
 
 ## Diclaimer
 The model is trained to andwer based on the encyclopedia of Meidcine
+
+## To Run 
+- open cmd 
+- cd C:\Users\vibud\Desktop\Github\llama-2-experiments\01-Medical-Chat
+- chainlit run app.py
