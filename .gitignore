@@ -8,6 +8,9 @@ llama-main/*
 *.bin
 *.pdf
 
+#vector-database
+vectorstore/
+
 # C extensions
 *.so
 
